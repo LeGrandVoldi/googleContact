@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="icon_googleContact.png" /> 
+    <!-- class Boostrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- class Boostrap CSS -->
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+    <link rel="stylesheet" href="style.css">
+    <title>Google Contacts</title>
+</head>
+<body>
+<header>
+      <div id="header_1">
+         <div id="header_1__1" class="center">
+            <img src="hamburger-menu.svg" alt="burger" width="30" height="35">
+         </div>
+         <div id="header_1__2" class="center">
+            <img src="icon_googleContact.png" alt="icon_gogleContact" width="30px" height="40px">
+         </div>
+         <div id="header_1__3" class="center_left">
+            Contacts
+         </div>
+      </div>
+      <div id="header_2" class="center_left">
+        <input type="text" class="form-control"  placeholder="Recherche" id="recherche">
+      </div>  
+</header>
+<main>
+    <style>
+        .element-right {
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+    </style>
+    <section id="main_1">
+        <div id="CreerC" class="center"><i class="fa-solid fa-plus" style="font-size: 20px;"></i><span style="opacity: 0;">O</span>Créer un contact</div><br>
+        <div id="Cont" class="center_left"><span style="opacity: 0;">OO</span><i class="fa-solid fa-user" style="font-size: 20px;"></i><span style="opacity: 0;">O</span>Contact</div><br><br>
+        <div id="libelle" style="position: relative;">Libellés <i class="element-right fa-solid fa-plus" style="font-size: 20px;"></i></div>
+    </section>
+    <section id="main_2">
+        
+            <div id="bloc_main" >
+                <div id="entete">
+                    <h3>Contacts <span style="font-size: 18px;" id="nombre_contacts">(0)</span></h3>
+                </div>
+                <div id="zero_contact" class="center">
+                    <div id="les_images"></div>
+                    <div class="text-center fs-5" id="tt">Aucun contact pour l'instant</div><br>
+                    <div class="center btn btn-info" id="ttt">Créer un contact</div>
+                </div>
+            </div>
+    </section>
+</main>   
+ 
+
+
+<!-- class Boostrap JS -->
+<script src="https://kit.fontawesome.com/225033a513.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<!-- class Boostrap JS -->
+<script src="index.js"></script>
+</body>
+</html>
