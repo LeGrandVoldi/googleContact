@@ -6,16 +6,51 @@
     <link rel="shortcut icon" type="image/x-icon" href="icon_googleContact.png" /> 
     <!-- class Boostrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <!-- class Boostrap CSS -->
-    
+    <!-- class Boostrap CSS -->  
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
     <link rel="stylesheet" href="style.css">
     <title>Google Contacts</title>
 </head>
-<body>
-<header>
+<body >
+<!-- Debut Ajouter Contact-->  
+
+<div id="ajouter_contact" class="center">
+    <div id="bloc_ajouter_contact">
+         <div>
+            <i class="fa-solid fa-circle-xmark" style="font-size: 30px;"></i>
+         </div>
+         <div>
+
+         </div>
+         <div>
+
+         </div>
+    </div>
+
+</div>
+
+<!-- Fin Ajouter Contact-->  
+
+
+<div id="Nav">
+    <div id="header">
+        <div id="header1__Nav" class="center">
+            <img src="icon_googleContact.png" alt="icon_gogleContact" width="30px" height="40px">
+         </div>
+         <div id="header2__Nav" class="center_left">
+            Contacts
+         </div>
+    </div>
+    <div id="main">
+        <div id="CreerC__main" class="center transition_width" style="position: relative;"><i class="fa-solid fa-plus element-left transition_width" style="font-size: 20px;" id="icon1_Nav"></i><span style="opacity: 0;">O</span>Créer un contact</div><br>
+        <div id="Cont__main" class="center transition_width" style="position: relative;"><span style="opacity: 0;"></span><i class="fa-solid fa-user element-left transition_width" style="font-size: 20px;" id="icon2_Nav"></i></i><span style="opacity: 0;">O</span>Contact</div><br><br>
+        <div id="libelle__main" style="position: relative;" class="transition_width">Libellés <i class="element-right fa-solid fa-plus transition_width" style="font-size: 20px;" id="icon3_Nav"></i></i></div>
+    </div>
+    
+</div> 
+<header >
       <div id="header_1">
-         <div id="header_1__1" class="center">
+         <div id="header_1__1" class="center" onclick="nav()">
             <img src="hamburger-menu.svg" alt="burger" width="30" height="35">
          </div>
          <div id="header_1__2" class="center">
@@ -36,21 +71,25 @@
             top: 0;
             right: 0;
         }
+        .element-left {
+            position: absolute; 
+            left: 15px;
+        }
     </style>
-    <section id="main_1">
-        <div id="CreerC" class="center"><i class="fa-solid fa-plus" style="font-size: 20px;"></i><span style="opacity: 0;">O</span>Créer un contact</div><br>
-        <div id="Cont" class="center_left"><span style="opacity: 0;">OO</span><i class="fa-solid fa-user" style="font-size: 20px;"></i><span style="opacity: 0;">O</span>Contact</div><br><br>
-        <div id="libelle" style="position: relative;">Libellés <i class="element-right fa-solid fa-plus" style="font-size: 20px;"></i></div>
+    <section id="main_1" class="transition_width">
+        <div id="CreerC" class="center transition_width" style="position: relative;"><i class="fa-solid fa-plus element-left transition_width" style="font-size: 20px;" id="icon1"></i><span style="opacity: 0;">O</span>Créer un contact</div><br>
+        <div id="Cont" class="center transition_width" style="position: relative;"><span style="opacity: 0;"></span><i class="fa-solid fa-user element-left transition_width" style="font-size: 20px;" id="icon2"></i></i><span style="opacity: 0;">O</span>Contact</div><br><br>
+        <div id="libelle" style="position: relative;" class="transition_width">Libellés <i class="element-right fa-solid fa-plus transition_width" style="font-size: 20px;" id="icon3"></i></i></div>
     </section>
-    <section id="main_2">
+    <section id="main_2" class="transition_width">
         
-            <div id="bloc_main" >
+            <div id="bloc_main" onclick="deNav()">
                 <div id="entete">
                     <h3>Contacts <span style="font-size: 18px;" id="nombre_contacts">(0)</span></h3>
                 </div>
                 <div id="zero_contact" class="center">
                     <div id="les_images"></div>
-                    <div class="text-center fs-5" id="tt">Aucun contact pour l'instant</div><br>
+                    <div class="text-center fs-5" id="tt">Aucun contact pour l'instant</div>
                     <div class="center btn btn-info" id="ttt">Créer un contact</div>
                 </div>
             </div>

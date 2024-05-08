@@ -18,7 +18,7 @@ header
 #header_1
 {
     grid-area:header_1 ;
-    width: 250px;
+    width: 21vw;
     display: grid;
     grid-template-areas: "header_1__1 header_1__2 header_1__3";
 
@@ -39,7 +39,7 @@ header
 #header_2
 {
      grid-area:header_2 ;
-     width: 77vw;
+     width: 79vw;
 
 }
 /* Fin Bloc Header */
@@ -74,6 +74,71 @@ main
                          "zero_contact";
 
 }
+/* Fin Bloc Main */
+
+/* Début Bloc Ajouter Contact */
+
+#ajouter_contact
+{
+    background-color: #17202A50;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    bottom: -100vh;
+    margin-top: -100vh;
+    z-index: 1;
+   
+}
+#bloc_ajouter_contact
+{
+    background-color: white;
+    width: 50vw;
+    height: 70vh;
+    border-radius: 20px;
+    border-bottom: solid #5D6D7E 3px;
+    border-top: solid #5D6D7E 3px
+    
+}
+
+/* Fin Bloc Ajouter Contact */
+
+/* Début Bloc Nav */
+
+#Nav
+{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    z-index: 1;
+    background-color: white;
+    border-right: solid #3336F660 2px;
+    width: 70vw;height: 100vh;
+    position: relative;
+    bottom: -100vh;
+    margin-top: -100vh;
+    left: -70vw;
+    transition-property: left;
+    transition-duration: 0.3s;
+    display: grid;
+    grid-template-areas: "header"
+                         "main";
+                         
+}
+#header
+{
+    height: 10vh;
+    display: grid;
+    grid-template-areas: "header1__Nav header2__Nav";
+}
+#header2__Nav
+{
+    font-size: 20px;
+}
+#main
+{
+    height: 90vh;
+    padding-left: 20px;
+    
+}
+/* Fin Bloc Nav */
 #entete
 {
    padding: 20px;
@@ -109,9 +174,10 @@ main
     justify-content: left;
     align-items: center;
 }
-ul
+.transition_width
 {
-    list-style-type: none;
+    transition-property: width , font-size;
+    transition-duration: 0.3s;
 }
 #recherche
 {
@@ -125,16 +191,36 @@ ul
 #CreerC
 {
     background-color: #c2e7ff;
+    font-size: 15px;
     height: 60px;
     border-radius: 17px;
     width: 13vw;
+}
+#CreerC__main
+{
+    background-color: #c2e7ff;
+    font-size: 15px;
+    height: 60px;
+    border-radius: 17px;
+    width: 47vw;
 }
 #Cont
 {
     background-color: #c2e7ff;
     height: 45px;
     border-radius: 30px;
+    font-size: 15px;
     width: 15vw;
+    color: #001d35;
+    font-weight: 700;
+}
+#Cont__main
+{
+    background-color: #c2e7ff;
+    height: 45px;
+    border-radius: 30px;
+    font-size: 15px;
+    width: 60vw;
     color: #001d35;
     font-weight: 700;
 }
@@ -147,23 +233,37 @@ ul
     width: 15vw;
     text-indent: 10px;
 }
+#libelle__main
+{
+    color: #444746;
 
+    font-size: 17px;
+    font-weight: 700;
+    width: 60vw;
+    text-indent: 10px;
+}
 
-@media (max-width:1090px) {
+@media (max-width:1280px) {
       #main_1
       {
         width: 0;
+        visibility: hidden;
       }
       #main_2
       {
         width: 100vw;
-        padding: 20px;
+        padding-right: 40px;
       }
       #header_2
         {
            
             width: 60vw;
 
+        }
+        #recherche
+        {
+            position: absolute;
+            right: 20px;
         }
 }
 @media (max-width:640px) {
@@ -179,6 +279,24 @@ ul
     #recherche
     {
         width: 50vw;
+    }
+   
+}
+@media (max-width:470px) {
+    #header_1__3
+    {
+        visibility: hidden;
+    }
+    #header_1__2
+    {
+        visibility: hidden;
+    }
+   
+}
+@media (max-width:385px) {
+    #CreerC__main
+    {
+        width: 60vw;
     }
    
 }
