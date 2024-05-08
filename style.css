@@ -96,7 +96,8 @@ main
     height: 70vh;
     border-radius: 20px;
     border-bottom: solid #5D6D7E 3px;
-    border-top: solid #5D6D7E 3px
+    border-top: solid #5D6D7E 3px;
+    display: grid;
     
 }
 
